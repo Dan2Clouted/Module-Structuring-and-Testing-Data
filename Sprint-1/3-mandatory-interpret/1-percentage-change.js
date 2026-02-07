@@ -33,5 +33,5 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
 
-// The expression is first calling the replaceAll method on the carPrice string to remove all commas. "10,000" ==> "10000".
-// Then it converts the resulting string into a number using the Number() function. "10000" ==> 10000.
+// The expression is first calling the replaceAll method on the carPrice string to remove all commas. "10,000" ==> "10000"
+// Then it converts the resulting string into a number using the Number() function. "10000" ==> 10000
