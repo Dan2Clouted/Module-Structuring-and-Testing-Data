@@ -20,7 +20,7 @@ Answer the following questions:
 
 What does `console` store?
 
-- It stores different data such as debug ,error ,info , log, warn, etc.
+- `console` is an object that contains methods like log, errors, warn, info, and debug. etc.
 
 What does the syntax `console.log` or `console.assert` mean? In particular, what does the `.` mean?
 

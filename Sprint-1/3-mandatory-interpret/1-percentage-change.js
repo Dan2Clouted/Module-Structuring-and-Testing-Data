@@ -21,7 +21,7 @@ console.log(`The percentage change is ${percentageChange}`);
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 
 // The error is on line 5, where there is a syntax error in the replaceAll method call. The second argument is missing quotes.
-// To fix it, we need to add quotes around the empty string: replaceAll(",", "").
+// To fix it,  replaceAll needs two string arguments, e.g. replaceAll(",", "")
 
 // c) Identify all the lines that are variable reassignment statements
 

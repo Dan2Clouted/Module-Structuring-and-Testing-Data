@@ -22,4 +22,4 @@ What effect does calling the `prompt` function have?
 
 What is the return value of `prompt`?
 
-- myName
+- The return value is stored in a variable called myName

@@ -17,7 +17,7 @@ console.log(result);
 
 // b) How many function calls are there?
 
-// There are 2 function calls. Console.log() and the template literal used.
+// There are 2 function calls. Console.log().
 
 // c) Using documentation, explain what the expression movieLength % 60 represents
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
