@@ -25,6 +25,8 @@ const pence = paddedPenceNumberString
 
 //This takes the last 2 digits to get the pence part (for "399" it becomes "99") and ensures it is always 2 digits long by padding with zeros on the right if needed.
 
+//.padEnd(2, "0") is unnecessary here because paddedPenceNumberString is always at least length 3 due to padStart(3, "0"), so substring(length - 2) will always return exactly two characters. That means the pence part is already guaranteed to be 2 digits.
+
 console.log(`£${pounds}.${pence}`);
 
 // This prints the final formatted price by inserting pounds and pence into a template string, producing £3.99.

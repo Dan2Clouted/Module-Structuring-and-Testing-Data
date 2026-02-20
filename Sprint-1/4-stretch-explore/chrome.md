@@ -22,4 +22,4 @@ What effect does calling the `prompt` function have?
 
 What is the return value of `prompt`?
 
-- The return value is stored in a variable called myName
+- prompt returns the text the user type as a string (or null if they clicked cancel)
