@@ -37,9 +37,20 @@ console.assert(
   `current output: ${currentOutput7}, target output: ${targetOutput7}`
 );
 
+function formatAs12HourClock(time) {
+  const hours = Number(time.slice(0, 2));
+  const minutes = time.slice(2); // ":MM"
+
+  if (hours === 0) return `12${minutes} am`;
+  if (hours === 12) return `12${minutes} pm`;
+  if (hours > 12) return `${String(hours - 12).padStart(2, "0")}${minutes} pm`;
+
+  return `${time} am`;
+}
+
 // I tested the function with edge cases around midnight and noon.
 // I found that the original function handled times like "08:00" and "23:00",
-// but it did not correctly handle "00:xx" (midnight times) or "12:xx" (noon times).
+// but it did not correctly handle "00:xx" (midnight  times) or "12:xx" (noon times).
 
 // Bugs found:
 // - "00:00" returned "00:00 am" instead of "12:00 am"
